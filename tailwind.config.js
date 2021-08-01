@@ -48,12 +48,34 @@ module.exports = {
           700: '#384c3b',
           800: '#222d23',
           900: '#0a0f0b',
+        },
+        blue:
+        {
+          50: '#e2ecff',
+          100: '#b2c7ff',
+          200: '#82a2fd',
+          300: '#527df9',
+          400: '#2258f6',
+          500: '#093edd',
+          600: '#0330ad',
+          700: '#00227d',
+          800: '#00154e',
+          900: '#000720',
+        },
+        pink: {
+          light: '#ff7ce5',
+          DEFAULT: '#ff49db',
+          dark: '#ff16d1',
         }
       }
     },
   },
   variants: {
-    extend: {},
+    extend: {
+     
+       placeItems: ['hover', 'focus'],
+      
+    },
   },
   plugins: [],
 }

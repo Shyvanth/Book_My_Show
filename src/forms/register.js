@@ -3,7 +3,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import "./login.css";
 
-export default function Login() {
+export default function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -15,14 +15,14 @@ export default function Login() {
     event.preventDefault();
   }
   function sayHello() {
-    alert('You clicked me!');
+    alert(' registerd !');
   }
 
   return (
-    <div className="Login rounded-2xl hover:bg-greyc-400">
+    <div className="Login flex-col items-center m-3 gap-y-14">
       <Form onSubmit={handleSubmit}>
         <Form.Group size="lg" controlId="email">
-          <Form.Label>Email</Form.Label>
+          <Form.Label>UR Email</Form.Label>
           <Form.Control
             autoFocus
             type="email"
@@ -38,8 +38,8 @@ export default function Login() {
             onChange={(e) => setPassword(e.target.value)}
           />
         </Form.Group>
-        <Button  onClick={sayHello} block size="lg" type="submit" disabled={!validateForm()} className="bg-blue-400 rounded-xl p-3">
-          Login
+        <Button  onClick={sayHello} block size="lg" type="submit" disabled={!validateForm()} className="bg-pink-400 p-3 rounded-2xl">
+          Register
         </Button>
       </Form>
     </div>
